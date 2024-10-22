@@ -17,14 +17,13 @@ class ListingFactory extends Factory
     public function definition(): array
     {
         return [
-            'title' => $this->faker->sentence(),
-            'logo' => $this->faker->filePath(),
+            'title' => $this->faker->jobTitle(),
             'tags' => 'laravel, api, backend',
             'company' => $this->faker->company(),
             'email' => $this->faker->companyEmail(),
             'website' => $this->faker->url(),
-            'location' => $this->faker->city(),
-            'description' => $this->faker->paragraph(5),
+            'location' => $this->faker->country(),
+            'description' => $this->faker->paragraph(10),
         ];
     }
 }

@@ -2,7 +2,7 @@
 
 @if (session($type))
     <div x-data="{ show: true }" x-init="setTimeout(() => show = false, 2000)" x-show="show" x-transition.duration.500ms id="flash-message"
-        class="flex mt-4 w-full max-w-sm overflow-hidden bg-laravel rounded-lg shadow-md dark:bg-gray-800 absolute top-0 left-1/2 -translate-x-1/2">
+        class="flex fixed mt-4 w-full max-w-sm overflow-hidden bg-laravel rounded-lg shadow-md dark:bg-gray-800 absolute top-0 left-1/2 -translate-x-1/2">
         <div class="flex items-center justify-center w-12 bg-emerald-500">
             <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                 <path
